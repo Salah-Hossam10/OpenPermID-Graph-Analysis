@@ -1,0 +1,8 @@
+Dataset,Total triples,Unique subjects,Unique predicates,Entity types,Parsing errors
+person,88868954,12906804,27,9,0
+organization,34212688,4177803,23,1,0
+quote,10292470,1317465,9,1,0
+instrument,1690866,255879,7,1,0
+industry,6380,1065,6,2,0
+assetClass,5961,1363,5,1,0
+currency,3879,459,13,2,0

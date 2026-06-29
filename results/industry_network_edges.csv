@@ -1,0 +1,3 @@
+Source type,Relationship,Destination type,Count
+BusinessClassification,broader,BusinessClassification,1027
+BusinessClassification,broader,EconomicSector,28
