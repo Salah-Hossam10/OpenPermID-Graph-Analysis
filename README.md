@@ -355,54 +355,6 @@ Objects are categorized as:
 
 URI objects are treated as graph relationships, while literal objects are treated as descriptive attributes.
 
-### Reproducible aggregation
-
-Python `Counter` objects are used for efficient aggregation, and the results are converted into Pandas DataFrames only when they need to be displayed or exported.
-
-### Deterministic network layout
-
-The NetworkX Industry diagram uses a fixed random seed to keep the layout reproducible across runs.
-
----
-
-## Technical Notes and Limitations
-
-- The custom parser is intentionally designed for the structure of the supplied OpenPermID N-Triples exports. A general-purpose RDF library such as RDFLib would be more suitable for arbitrary RDF syntax.
-- File-level subject counts are calculated by detecting changes between adjacent subjects. This is efficient when the export is grouped by subject, as in the analyzed files.
-- For unsorted exports requiring strict global de-duplication, a set, external database, or SQLite `DISTINCT` workflow would provide a safer count.
-- The project reports the data available in the supplied export and does not assume that it represents the full OpenPermID knowledge graph.
-- Raw datasets are not required to be committed to GitHub when file size, licensing, confidentiality, or assessment-sharing restrictions apply.
-
----
-
-## Possible Extensions
-
-- Replace the custom parser with RDFLib for broader RDF compatibility
-- Store aggregated graph data in Neo4j or another graph database
-- Add automated unit tests for parsing and aggregation functions
-- Export charts automatically as PNG or SVG files
-- Build an interactive dashboard with Streamlit or Plotly
-- Add graph centrality, connected-component, and path analyses
-- Package the workflow as a command-line application
-
----
-
-## Assessment Context
-
-This repository was prepared for a technical skills evaluation. It demonstrates:
-
-- Large-file processing
-- RDF and graph-data understanding
-- Python data engineering
-- Exploratory data analysis
-- Cross-dataset relationship mapping
-- Data-quality validation
-- Reproducible reporting
-- Clear business interpretation
-
-No proprietary company data, credentials, or confidential information should be committed to this repository.
-
----
 
 ## Author
 
